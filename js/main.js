@@ -6,14 +6,14 @@ let resul = document.getElementById("alerta");
 
 btn.addEventListener("click", function(e){
     e.preventDefault();
-    if (campo1.value > campo2.value && campo1.value > campo3.value ){
-        resul.innerHTML = `El numero mayor es ${campo1.value}`
+    if (campo1.value < campo2.value && campo1.value < campo3.value ){
+        resul.innerHTML = `El numero menor es ${campo1.value}`
     } 
-    if (campo2.value > campo1.value && campo2.value > campo3.value ){
-        resul.innerHTML = `El numero mayor es ${campo2.value}`
+    if (campo2.value < campo1.value && campo2.value < campo3.value ){
+        resul.innerHTML = `El numero menor es ${campo2.value}`
     } 
-    if (campo3.value > campo1.value && campo3.value > campo2.value ){
-        resul.innerHTML = `El numero mayor es ${campo3.value}`
+    if (campo3.value < campo1.value && campo3.value < campo2.value ){
+        resul.innerHTML = `El numero menor es ${campo3.value}`
     } 
 
     if (campo1.value < 101 && campo1.value > 0){
